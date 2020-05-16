@@ -3,7 +3,7 @@
 # These are my personal preferences and they'll change and improve
 # with time. I'll try to keep this repo up-to-date.
 
-export IP=127.0.0.1 # to be set before before starting with a new machine
+export IP=127.0.0.1 # to be set before starting with a new machine
 export MACHINE_DIR=$HOME/machines
 export CURRENT_DIR=$MACHINE_DIR/$IP
 
