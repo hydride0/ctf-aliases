@@ -16,6 +16,6 @@ gobuster_dir() {  gobuster dir -w $1 -u http://$IP  }
 
 md5() {  echo $1 | md5sum - | awk '{ print $1 }'  }
 
-e4l() {  enum4linux -a $IP | grep -v "Use of uninitialized value" > $MACHINE_DIR/$IP/enum4linux_$IP  }
+e4l() {  enum4linux -a $IP | grep -v "Use of uninitialized value" > $CURRENT_DIR/enum4linux_$IP  }
 
 alias httpserv="echo Your IP is $(ip --br addr|tail -n1|awk '{print $3}' | sed 's/\/..//g') && python3 -m http.server"
